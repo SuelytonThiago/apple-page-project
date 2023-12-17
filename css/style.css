@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#navbar-1{
+    background-color: #333;
+}
+
+#header-container{
+    margin: 0 auto;
+}
+
+#navbar-1 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+#apple-logo{
+    width: 2rem
+}
+
+#navbar-1 a{
+    color: #fff;
+    opacity: .7;
+    transition: .3s;
+}
+
+#navbar-1 a:hover{
+    opacity: 1;
+}
+
+#navbar-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#navbar-2 ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-2 a{
+    color: #333;
+    opacity: .7;
+    transition: .3s;
+}
+
+#navbar-2 a:hover{
+    opacity: 1;
+}
+
+#navbar-2 button{
+    padding: .5rem .9rem;
+    background-color: #06a2fc;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: .9;
+    transition: .3s;
+}
+
+#navbar-2 button:hover{
+    opacity: 1;
+}
+
+#main-container{
+    text-align: center;
+}
+
+#main-ofert{
+    margin-top: 1rem;
+}
+
+#main-ofert a{
+    color: #06a2fc;
+}
+
+#main-title{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+#main-description{
+    margin: 3rem auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+    color:#333
+}
+
+#main-description h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#main-description a{
+    color: #fff;
+    background-color: #06a2fc;
+    padding: .6rem .8rem;
+    border-radius: 20px; 
+    opacity: .9;
+    transition: .3s;
+}
+
+#main-description a:hover{
+    opacity: 1;
+}
+
+#models-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#models-container img{
+    width: 450px;
+    height: 450px;
+}
+
+#image-pick ul{
+    display: flex;
+}
+
+#image-pick li{
+    cursor: pointer;   
+}
+
+#image-pick li .color{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    box-shadow: 1px 1px 1px;
+    pointer-events: none;
+    border: 4px solid #fff;
+}
+
+#models-container p{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.selected{
+    outline: 2px solid #06a2fc;
+}
+
+#red .color{
+    background-color: red;
+}
+
+#pink .color{
+    background-color: pink;
+}
+
+#white .color{
+    background-color: #fff;
+}
+
+#black .color{
+    background-color: #000;
+}
+
+#golden .color{
+    background-color: #fff59e;
+}
+
+#description span{
+    color: #333;
+    text-transform: uppercase;
+}
+
+@media(max-width:767px){
+    #navbar-inner li{
+        display: none;
+    }
+
+    #navbar-inner #logo{
+        display: flex;
+    }
+
+    #navbar-inner2 li{
+        display: none;
+    }
+
+    #navbar-inner2 #nav-btn{
+        display: flex;
+    }
+
+    #models-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #main-container{
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    #main-description h2{
+        font-size: 40px;
+    }
+
+    #navbar-2 h2{
+        font-size: 15px;
+    }
+
+    #apple-logo{
+        width: 1.5rem;
+    }
+}
